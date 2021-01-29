@@ -1,6 +1,6 @@
 const mongoose=require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/newDb', {useNewUrlParser: true},(err)=>{
+mongoose.connect(process.env.MONGO_DB || 'mongodb://localhost:27017/newDb', {useNewUrlParser: true},(err)=>{
     if(err){
         console.warn(`connection fails`)
         console.log(err);

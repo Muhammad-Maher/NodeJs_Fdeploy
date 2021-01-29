@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Muhammad-Maher/NodeJs.git"
+    "url": "git+https://github.com/Muhammad-Maher/NodeJs_deploy.git"
   },
   "author": "Muhammad Maher <muhammadahmedmaher@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Muhammad-Maher/NodeJs/issues"
+    "url": "https://github.com/Muhammad-Maher/NodeJs_deploy/issues"
   },
-  "homepage": "https://github.com/Muhammad-Maher/NodeJs#readme",
+  "homepage": "https://github.com/Muhammad-Maher/NodeJs_deploy#readme",
   "dependencies": {
     "bcrypt": "^5.0.0",
     "express": "^4.17.1",
