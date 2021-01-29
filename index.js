@@ -20,6 +20,6 @@ app.use('/api/todo', todoRouter);
 app.use('/api/post', postRouter);
 app.use('/api/user', userRouter);
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.info('server listening on poset 3000')
 })
