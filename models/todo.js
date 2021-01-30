@@ -1,17 +1,28 @@
 const mongoose=require( 'mongoose');
-
-const schema=new mongoose.Schema({
+const User = require('./user')
+const Schema = mongoose.Schema;
+const schema=new Schema({
+    userId:
+        { type: Schema.Types.ObjectId, ref: 'User'}
+    ,
     title:{
         type:String,
-        maxlength:20,
-        required:true
+        required:true,
+        minlength:10,
+        maxlength:20,        
     },
-    status:{
-       type:String,
-       required:true,
-       enum:['to-do','in-progress','done'] 
-    }
-});
+    body:{
+         type:String,
+         maxlenngth:10000,
+         required:true
+    },
+    tags:[{
+        type:String,
+        maxlength:10
+
+    }]
+
+},{ timestamps: true });
 
 
 const Todo=mongoose.model('Todo',schema);
